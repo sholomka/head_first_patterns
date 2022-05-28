@@ -1,0 +1,23 @@
+{
+    "name": "sholomka/strategy",
+    "authors": [
+        {
+            "name": "Yurii Sholom",
+            "email": "sholomka@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Strategy\\": "src/Strategy",
+            "Observer\\": "src/Observer",
+            "Decorator\\": "src/Decorator",
+            "AbstractFactory\\": "src/Factory/AbstractFactory",
+            "FactoryMethod\\": "src/Factory/FactoryMethod",
+            "Factory\\": "src/Factory/Factory",
+            "Singleton\\": "src/Singleton"
+        }
+    },
+    "require": {
+        "doctrine/orm": "^2.10"
+    }
+}
