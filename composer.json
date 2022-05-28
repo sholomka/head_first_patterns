@@ -8,13 +8,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Strategy\\": "src/Strategy",
-            "Observer\\": "src/Observer",
-            "Decorator\\": "src/Decorator",
-            "AbstractFactory\\": "src/Factory/AbstractFactory",
-            "FactoryMethod\\": "src/Factory/FactoryMethod",
-            "Factory\\": "src/Factory/Factory",
-            "Singleton\\": "src/Singleton",
+            "Strategy\\": "Strategy",
+            "Observer\\": "Observer",
+            "Decorator\\": "Decorator",
+            "AbstractFactory\\": "Factory/AbstractFactory",
+            "FactoryMethod\\": "Factory/FactoryMethod",
+            "Factory\\": "Factory/Factory",
+            "Singleton\\": "Singleton",
             "Command\\": "Command",
             "Adapter\\": "Adapter",
             "Facade\\": "Facade",
@@ -22,7 +22,8 @@
             "Iterator\\": "Iterator",
             "Composite\\": "Composite",
             "State\\": "State",
-            "Proxy\\": "Proxy"
+            "Proxy\\": "Proxy",
+            "Patterns\\": "PatternsWorkingTogether"
         }
     },
     "require": {
