@@ -14,7 +14,15 @@
             "AbstractFactory\\": "src/Factory/AbstractFactory",
             "FactoryMethod\\": "src/Factory/FactoryMethod",
             "Factory\\": "src/Factory/Factory",
-            "Singleton\\": "src/Singleton"
+            "Singleton\\": "src/Singleton",
+            "Command\\": "Command",
+            "Adapter\\": "Adapter",
+            "Facade\\": "Facade",
+            "TemplateMethod\\": "TemplateMethod",
+            "Iterator\\": "Iterator",
+            "Composite\\": "Composite",
+            "State\\": "State",
+            "Proxy\\": "Proxy"
         }
     },
     "require": {
