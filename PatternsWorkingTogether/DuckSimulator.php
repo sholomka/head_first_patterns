@@ -8,16 +8,20 @@ class DuckSimulator
     public static function start(): void
     {
         $simulator = new self();
-        $simulator->simulate();
+
+        $countingDuckFactory = new CountingDuckFactory();
+        $duckFactory = new DuckFactory();
+
+        $simulator->simulate($countingDuckFactory, $duckFactory);
     }
 
-    private function simulate(): void
+    private function simulate(AbstractDuckFactory $countingDuckFactory, AbstractDuckFactory $duckFactory): void
     {
-        $mallardDuck = new QuackCounter(new MallardDuck());
-        $redheadDuck =  new QuackCounter(new RedheadDuck());
-        $duckCall =  new QuackCounter(new DuckCall());
-        $rubberDuck =  new QuackCounter(new RubberDuck());
-        $gooseDuck = new GooseAdapter(new Goose());
+        $mallardDuck = $countingDuckFactory->createMallardDuck();
+        $redheadDuck =  $countingDuckFactory->createRedheadDuck();
+        $duckCall =  $countingDuckFactory->createDuckCall();
+        $rubberDuck =  $countingDuckFactory->createRubberDuck();
+        $gooseDuck = $duckFactory->createGooseDuck();
 
         echo 'Duck Simulator' . PHP_EOL;
 
